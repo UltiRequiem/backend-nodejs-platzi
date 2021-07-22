@@ -2,7 +2,9 @@
   "name": "backend-nodejs",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "DEBUG=app:* nodemon src/index"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UltiRequiem/backend-nodejs-platzi.git"

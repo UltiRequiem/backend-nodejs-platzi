@@ -1,16 +1,11 @@
 const express = require('express');
 
+const config = require('./config');
+const moviesAPI = require('./routes/movies');
+
 const app = express();
 
-const { config } = require('./config');
-
-app.get('/', (_req, res) => {
-  res.send('Hello World');
-});
-
-app.get('/json', (req, res) => {
-  res.json({ hello: 'world' });
-});
+moviesAPI(app)
 
 app.listen(config.port, () =>
   console.log(`Running on https://localhost:${config.port}`)
