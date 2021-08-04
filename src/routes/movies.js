@@ -37,6 +37,7 @@ function moviesApi(app) {
   });
 
   router.post('/', async (req, res, next) => {
+    console.log(req)
     const { body: movie } = req;
     try {
       const createMovieID = await moviesService.crateMovie({ movie });
