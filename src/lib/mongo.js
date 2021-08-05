@@ -41,9 +41,9 @@ class MongoLib {
     );
   }
 
-  create(collection, data) {
+  create(coll, data) {
     return this.connect()
-      .then((db) => db.collection(collection).insertOne(data))
+      .then((db) => db.collection(coll).insertOne(data))
       .then((result) => result.insertedId);
   }
 
