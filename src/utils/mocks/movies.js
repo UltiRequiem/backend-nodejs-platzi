@@ -154,9 +154,9 @@ const moviesMock = [
   }
 ];
 
-function filteredMoviesMocks(tag) {
-  return moviesMock.filter((movie) => movie.tags.incluedes(tag));
-}
+/** @param {string} tag */
+const filteredMoviesMock = (tag) =>
+  moviesMock.filter((movie) => movie.tags.includes(tag));
 
 class MoviesServiceMock {
   async getMovies() {
@@ -170,6 +170,6 @@ class MoviesServiceMock {
 
 module.exports = {
   MoviesServiceMock,
-  filteredMoviesMocks,
+  filteredMoviesMock,
   moviesMock
 };
