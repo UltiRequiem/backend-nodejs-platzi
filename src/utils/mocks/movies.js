@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 const moviesMock = [
   {
     id: 'd2a4a062-d256-41bb-b1b2-9d915af6b75e',
@@ -153,6 +154,22 @@ const moviesMock = [
   }
 ];
 
+function filteredMoviesMocks(tag) {
+  return moviesMock.filter((movie) => movie.tags.incluedes(tag));
+}
+
+class MoviesServiceMock {
+  async getMovies() {
+    return Promise.resolve(moviesMock);
+  }
+
+  async createMovie() {
+    return Promise.resolve(moviesMock[0]);
+  }
+}
+
 module.exports = {
+  MoviesServiceMock,
+  filteredMoviesMocks,
   moviesMock
 };
