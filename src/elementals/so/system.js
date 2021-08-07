@@ -7,4 +7,4 @@ const OS = os.type();
 const OS_VERSION = os.release();
 const USR_INFO = os.userInfo();
 
-console.log(CPU_INFO, IP_ADDRESS, FREE_MEMORY, OS, OS_VERSION, USR_INFO);
+// console.log(CPU_INFO, IP_ADDRESS, FREE_MEMORY, OS, OS_VERSION, USR_INFO);

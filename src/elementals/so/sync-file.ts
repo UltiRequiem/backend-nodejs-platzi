@@ -1,6 +1,6 @@
-const fs = require('fs').promises;
+import {promises as fs} from 'fs'
 
-async function getFileLines(file) {
+async function getFileLines(file:string) {
   if (!file) throw new Error('You have to pass a file!');
 
   const content = await fs.readFile(file, 'utf-8');
@@ -13,3 +13,4 @@ async function printLines() {
 }
 
 printLines();
+

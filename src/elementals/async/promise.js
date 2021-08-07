@@ -8,8 +8,6 @@ const helloPromises = () =>
     }, 500);
   });
 
-
-
 const printResolve = (promise) => {
   promise
     .then((msg) => msg.toUpperCase())

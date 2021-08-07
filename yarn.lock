@@ -157,6 +157,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/node@^16.4.13":
+  "integrity" "sha512-bLL69sKtd25w7p1nvg9pigE4gtKVpGTPojBFLMkGHXuUgap2sLqQt2qUnqmVCDfzGUL0DRNZP+1prIZJbMeAXg=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-16.4.13.tgz"
+  "version" "16.4.13"
+
 "@types/unist@*", "@types/unist@^2.0.2":
   "integrity" "sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ=="
   "resolved" "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz"
