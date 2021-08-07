@@ -60,7 +60,7 @@ function moviesApi(app) {
 
         res.status(201).json({
           data: createMovieID,
-          message: 'Movie created!'
+          message: 'Movie created successfully!'
         });
       } catch (err) {
         next(err);
